@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#FBF8F1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Logo"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Board"
+        android:layout_alignStart="@+id/Board" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Board"
+        android:background="@drawable/board"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Score"
+        android:background="@drawable/score"
+        android:layout_above="@+id/OptionButton"
+        android:layout_toRightOf="@+id/Logo"
+        android:layout_toEndOf="@+id/Logo"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="35dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bestScore"
+        android:background="@drawable/bestScore"
+        android:layout_above="@+id/OptionButton"
+        android:layout_alignRight="@+id/Board"
+        android:layout_alignEnd="@+id/Board" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OptionButton"
+        android:background="@drawable/Options"
+        android:layout_alignBottom="@+id/Logo"
+        android:layout_alignLeft="@+id/Score"
+        android:layout_alignStart="@+id/Score"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginStart="39dp" />
+</RelativeLayout>
