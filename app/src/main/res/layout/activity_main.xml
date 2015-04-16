@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bestScore"
-        android:background="@drawable/bestScore"
+        android:background="@drawable/best_score"
         android:layout_above="@+id/OptionButton"
         android:layout_alignRight="@+id/Board"
         android:layout_alignEnd="@+id/Board" />
@@ -48,10 +48,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/OptionButton"
-        android:background="@drawable/Options"
+        android:background="@drawable/options"
         android:layout_alignBottom="@+id/Logo"
         android:layout_alignLeft="@+id/Score"
         android:layout_alignStart="@+id/Score"
         android:layout_marginLeft="-4dp"
         android:layout_marginStart="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:id="@+id/messages"
+        android:layout_above="@+id/Board"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/OptionButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:id="@+id/textScore"
+        android:layout_marginBottom="18dp"
+        android:layout_alignBottom="@+id/Score"
+        android:layout_toRightOf="@+id/OptionButton"
+        android:layout_toEndOf="@+id/OptionButton"
+        android:layout_marginLeft="15dp"/>
+
 </RelativeLayout>

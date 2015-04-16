@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="hello">hello</string>
+    <string name="score">New Text</string>
+
 </resources>
